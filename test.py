@@ -1,0 +1,52 @@
+from classConjunto import Conjunto
+import os
+def testar():
+    c1=Conjunto([2,4,6,8,10])
+    c2=Conjunto([4,8,12,16])
+    c3=Conjunto([8,4,2,10,6])
+    os.system('cls')
+    print('\t~~~~~~~EJEMPLO 1~~~~~~~')
+    print('-----CONJUNTO 1-----')
+    c1.mostrar()
+    print('\t')
+    print('-----CONJUNTO 2-----')
+    c2.mostrar()
+    print('\t')
+    print('-----CONJUNTO 3-----')
+    c3.mostrar()
+    print('\t')
+    print('-----CONJUNTO 1 + CONJUNTO 2-----')
+    c12=c1+c2
+    c12.mostrar()
+    print('-----CONJUNTO 1 - CONJUNTO 2-----')
+    c21=c1-c2
+    c21.mostrar()
+    print('-----¿CONJUNTO 1 == CONJUNTO 2?-----')
+    if c1==c2:
+        print('CONJUNTO 1 ES IGUAL A CONJUNTO 2')
+    else:
+        print('CONJUNTO 1 NO ES IGUAL A CONJUNTO 2')
+    print('-----¿CONJUNTO 1 == CONJUNTO 3?-----')
+    if c1==c3:
+        print('CONJUNTO 1 ES IGUAL A CONJUNTO 3')
+    else:
+        print('CONJUNTO 1 NO ES IGUAL A CONJUNTO 3')
+    input()
+    os.system('cls')
+    print('\t~~~~~~~EJEMPLO 2~~~~~~~')
+    print('-----CONJUNTO CON ELEMENTOS NO ENTEROS [H,4,a,5.4]-----')
+    c4=Conjunto(['H',4,'a',5.4])
+    c4.mostrar()
+    print('CREA UN CONJUNTO VACIO')
+    input()
+    os.system('cls')
+    print('\t~~~~~~~EJEMPLO 3~~~~~~~')
+    print('-----CONJUNTO SIN NINGUN ELEMENTO-----')
+    c5=Conjunto()
+    c4.mostrar()
+    print('CREA UN CONJUNTO VACIO')
+    input()
+    os.system('cls')
+    print('----------FIN TEST----------')
+    input()
+    os.system('cls')
